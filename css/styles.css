@@ -38,7 +38,7 @@ img {
 }
 
 .container {
-  /* border: 1px solid red; */
+outline: 1px solid red;
   width: 1200px;
 
   padding-left: 15px;
@@ -119,8 +119,8 @@ ul {
 }
 
 .header-link-nav {
-  /* position: relative;
-  color: var(--main-text-color); */
+
+  
 
   display: block;
   padding-top: 32px;
@@ -279,6 +279,53 @@ ul {
   color: #fff;
   background-color: #1875c1;
 }
+/* Modal button */
+.backdrop{
+position: fixed;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.2);
+}
+
+
+.modal-wrapper{
+position: absolute;
+top:50%;
+ left:50%;
+transform: translate(-50%,-50%); 
+border-radius: 4px;
+width: 528px;
+height: 581px;
+box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+background: #fff;
+}
+
+
+
+.modal-btn{
+position: absolute;
+top: 8px;
+right: 8px;
+ border-radius: 50%;
+
+background-color: #fff; 
+border: 1px solid rgba(203, 195, 195,0.5 );
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+
+
+width: 30px;
+height: 30px;
+}
+.modal-icon{
+  fill: #000;
+}
+
+
 /* Our activity */
 
 .our-activity-section {
