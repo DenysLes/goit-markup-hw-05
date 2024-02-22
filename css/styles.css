@@ -104,6 +104,9 @@ ul {
 }
 
 .header-link-nav-accent {
+  position: relative;
+  color: var(--accent-color);
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -116,6 +119,9 @@ ul {
 }
 
 .header-link-nav {
+  /* position: relative;
+  color: var(--main-text-color); */
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -126,6 +132,18 @@ ul {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+}
+.header-link-nav-accent::after {
+  content: '';
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  background-color: var(--accent-color);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .header-list-contact {
@@ -209,11 +227,11 @@ ul {
 }
 
 .header-link-mail:hover {
-color: var(--accent-color);
+  color: var(--accent-color);
 }
 .header-link-mail:focus {
   color: var(--accent-color);
-  }
+}
 
 /* Hero */
 .hero-section {
@@ -403,7 +421,7 @@ color: var(--accent-color);
 .img-box-activity:last-child {
   margin-right: 0px;
 }
-.our-activity-label{
+.our-activity-label {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -413,18 +431,17 @@ color: var(--accent-color);
   justify-content: center;
 
   font-family: "Roboto", sans-serif;
-font-weight: 700;
-font-size: 14px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-text-align: center;
-color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
 
-width: 370px;
-height: 70px;
-background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
 }
-
 
 /* Our team */
 .our-team-section {
@@ -814,6 +831,9 @@ background: rgba(47, 48, 58, 0.8);
 }
 
 .portfolio-header-link-accent {
+position: relative;
+color: var(--accent-color);
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -823,6 +843,18 @@ background: rgba(47, 48, 58, 0.8);
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+.portfolio-header-link-accent::after {
+  content: '';
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  background-color: var(--accent-color);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /* Portfolio section */
