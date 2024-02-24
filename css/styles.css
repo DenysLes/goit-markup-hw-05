@@ -69,6 +69,7 @@ ul {
 }
 
 .logo {
+  animation: rotate 0.7s ease-in-out both;
   text-decoration: none;
   color: #000;
   font-family: var(--main-font);
@@ -78,16 +79,33 @@ ul {
   letter-spacing: 0.78px;
 
   margin-right: 93px;
+
 }
 
 .logo-accent {
+  animation: rotate 0.7s ease-in-out both;
   color: var(--accent-color);
   font-family: var(--secondary-font);
   font-size: 26px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+
+
 }
+
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0) ;
+  }
+  100% {
+    transform: rotate(360deg) ;
+  }
+}
+
+
 
 .header-link-list {
   display: flex;
@@ -296,7 +314,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Modal button */
 .backdrop {
-
   position: fixed;
   top: 0;
   left: 0;
@@ -309,27 +326,24 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /* ===============+++++++++++++ */
 
-.backdrop.is-hidden .modal-wrapper {
+.backdrop.is-hidden.modal-wrapper {
  transition: (-50%, -50%) scale(4);
   opacity: 0;
-}
-.backdrop .modal-wrapper {
+} 
+ .backdrop.modal-wrapper {
   transition: (-50%, -50%), scale (1); 
   opacity: 1;
 }
 
 /* ++++++++++++++++++++++++ */
 .backdrop.is-hidden {
-
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
 }
 
 .modal-wrapper {
-
-
-  position: absolute;
+ position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -339,23 +353,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
+ 
 
   transition: transform 330ms ease-in-out 240ms;
   opacity: transform 330ms ease-in-out 240ms;
 }
-
-@keyframes swirl-in-fwd {
-  0% {
-    transform: rotate(-540deg) scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0) scale(1);
-    opacity: 1;
-  }
-}
-
-
 
 .modal-btn {
   position: absolute;
@@ -516,6 +518,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   margin-right: 30px;
 }
+
 .img-box-activity:last-child {
   margin-right: 0px;
 }
@@ -539,6 +542,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
 }
+
 
 /* Our team */
 .our-team-section {
@@ -1036,7 +1040,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
 
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   
+ 
 }
+
 
 .filters-items-button-accent {
   font-family: var(--main-font);
