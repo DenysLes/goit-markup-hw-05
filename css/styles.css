@@ -277,6 +277,7 @@ ul {
 }
 /* Modal button */
 .backdrop {
+
   position: fixed;
   top: 0;
   left: 0;
@@ -290,22 +291,25 @@ ul {
 /* ===============+++++++++++++ */
 
 .backdrop.is-hidden .modal-wrapper {
-  transition: (-50%, -50%) scale(4);
+ transition: (-50%, -50%) scale(4);
   opacity: 0;
 }
 .backdrop .modal-wrapper {
-  transition: (-50%, -50%), scale (1);
+  transition: (-50%, -50%), scale (1); 
   opacity: 1;
 }
 
 /* ++++++++++++++++++++++++ */
 .backdrop.is-hidden {
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
 .modal-wrapper {
+
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -323,29 +327,16 @@ ul {
 
 @keyframes swirl-in-fwd {
   0% {
-    -webkit-transform: rotate(-540deg) scale(0);
     transform: rotate(-540deg) scale(0);
     opacity: 0;
   }
   100% {
-    -webkit-transform: rotate(0) scale(1);
     transform: rotate(0) scale(1);
     opacity: 1;
   }
 }
 
-@-webkit-keyframes swirl-in-fwd {
-  0% {
-    -webkit-transform: rotate(-540deg) scale(0);
-    transform: rotate(-540deg) scale(0);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate(0) scale(1);
-    transform: rotate(0) scale(1);
-    opacity: 1;
-  }
-}
+
 
 .modal-btn {
   position: absolute;
@@ -1054,20 +1045,20 @@ ul {
   margin-bottom: 0;
 }
 
-.portfolio-item-blok:hover {
+.portfolio-item-link:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
-  border: 1px solid #eee;
+
 }
-.portfolio-item-blok:focus {
+.portfolio-item-link:focus {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
-  border: 1px solid #eee;
+
 }
 
-.portfoli-item-link {
+.portfoli0-item-link {
   /* display: block; */
   text-decoration: none;
   position: relative;
@@ -1138,7 +1129,7 @@ ul {
   height: 168px;
   background-color: rgba(33, 150, 243, 0.9);
 }
-.portfoli-item-link:hover .description {
+.portfolio-item-link:hover .description {
   transform: translateY(-110px);
   opacity: 1;
   visibility: 1;
