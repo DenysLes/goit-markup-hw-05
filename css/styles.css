@@ -1136,7 +1136,7 @@ ul {
   transition-property: rgba(33, 150, 243, 0.9);
   transition-duration: cubic-bezier(0.4, 0, 0.2, 1); /*  250ms */
 }
-.portfoli-item-link:focus .description {
+.portfolio-item-link:focus .description {
   transform: translateY(-110px);
   opacity: 1;
   visibility: 1;
