@@ -653,31 +653,24 @@ ul {
   align-items: center;
   width: 44px;
   height: 44px;
-
   border-radius: 50%;
-}
 
-.social-link:hover {
-  background-color: var(--accent-color);
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .team-members-icon {
   fill: #afb1b8;
-}
-.team-members-icon-accent {
-  fill: #fff;
-}
-.social-link:hover .team-members-icon {
-  fill: #fff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.social-link:hover .team-members-icon,
 .social-link:focus .team-members-icon {
   fill: #fff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Regular customers  */
@@ -696,14 +689,12 @@ ul {
   margin-top: 50px;
 }
 .regular-customers-item {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-
   width: 170px;
   height: 92px;
 
   margin-right: 30px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers-item:last-child {
@@ -724,31 +715,20 @@ ul {
   border-radius: 4px;
 }
 
-.regular-customers-item:hover {
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.regular-customers-item:hover .regular-costumers-icon-item {
-  fill: var(--accent-color);
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.regular-costumers-icon-link:focus .regular-costumers-icon-item {
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
-
-  fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+.regular-customers-item:hover,
 .regular-customers-item:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
-
+}
+.regular-costumers-icon-item {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-customers-item:hover .regular-costumers-icon-item,
+.regular-costumers-icon-link:focus .regular-costumers-icon-item {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  fill: var(--accent-color);
 }
 
 .regular-customers-titel {
@@ -823,11 +803,11 @@ ul {
   flex-shrink: 0;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.42px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover {
-  color: var(--accent-color);
-}
+.footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
 }
@@ -863,16 +843,12 @@ ul {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-}
-.footer-social-link:hover {
-  background-color: var(--accent-color);
 
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
-
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
@@ -918,16 +894,13 @@ ul {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-}
 
-.portfolio-header-link:hover {
-  color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.portfolio-header-link:hover,
 .portfolio-header-link:focus {
   color: var(--accent-color);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-header-link-accent {
@@ -994,25 +967,17 @@ ul {
   padding-bottom: 6px;
   padding-right: 22px;
   padding-left: 22px;
-}
-
-.filters-items-button:hover {
-  background: var(--accent-color);
-  color: #fff;
-
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
-    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.filters-items-button:hover,
 .filters-items-button:focus {
   background: var(--accent-color);
   color: #fff;
 
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
-
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters-items-button-accent {
@@ -1032,24 +997,16 @@ ul {
   padding-bottom: 6px;
   padding-right: 25px;
   padding-left: 25px;
-}
-.filters-items-button-accent:hover {
-  background: var(--accent-color);
-  color: #fff;
-
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
-    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.filters-items-button-accent:hover,
 .filters-items-button-accent:focus {
   background: var(--accent-color);
   color: #fff;
 
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
-
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Portfolio items */
 
@@ -1081,25 +1038,19 @@ ul {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
-
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item-link:focus {
   display: block;
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
-
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item-link {
   display: block;
   text-decoration: none;
 
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item-title {
@@ -1130,16 +1081,6 @@ ul {
   color: var(--secondary-text-color);
 }
 
-/* portfoli header icons */
-
-.portfolio-header-icon {
-  fill: var(--secondary-text-color);
-  margin-right: 10px;
-}
-/* .portfolio-header-icon:hover{
-  fill: var(--accent-color);
-} */
-
 /* PORTFOLIO ANIMATION */
 .description-blok {
   position: relative;
@@ -1166,6 +1107,7 @@ ul {
   transform: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: rgba(33, 150, 243, 0.9);
 }
 
 .description-text {
@@ -1180,17 +1122,9 @@ ul {
   height: 168px;
   background-color: rgba(33, 150, 243, 0.9);
 }
-.portfolio-item-link:hover .description {
-  transform: translateY(0);
-  opacity: 1;
-  visibility: 1;
-  transition-property: rgba(33, 150, 243, 0.9);
-  transition-duration: 250ms cubic-bezeir(0.4, 0, 0.2, 1);
-}
+.portfolio-item-link:hover .description,
 .portfolio-item-link:focus .description {
   transform: translateY(0);
   opacity: 1;
   visibility: 1;
-  transition-property: rgba(33, 150, 243, 0.9);
-  transition-duration: 250ms cubic-bezeir(0.4, 0, 0.2, 1);
 }
