@@ -37,7 +37,7 @@ img {
 }
 
 .container {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   width: 1200px;
 
   padding-left: 15px;
@@ -1030,7 +1030,7 @@ ul {
   display: block;
   text-decoration: none;
 
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item-title {
