@@ -617,11 +617,6 @@ ul {
   margin-right: auto;
 }
 
-.team-social-link-item {
-  text-align: center;
-
-  margin-right: 10px;
-}
 .team-social-link-item:last-child {
   margin-right: 0;
 }
@@ -643,12 +638,16 @@ ul {
 
 .team-members-icon {
   fill: #afb1b8;
+}
+.team-social-link-item {
+  text-align: center;
+  margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .team-members-icon,
 .social-link:focus .team-members-icon {
-  fill: #fff;
+  fill: white;
 }
 
 /* Regular customers  */
@@ -677,7 +676,7 @@ ul {
   margin-right: 0;
 }
 
-.regular-costumers-icon {
+.regular-costumers-icon-item {
   align-items: center;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -694,10 +693,8 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.regular-costumers-icon-link:hover .regular-costumers-icon,
-.regular-costumers-icon-link:focus .regular-costumers-icon {
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
+.regular-costumers-icon-link:hover .regular-costumers-icon-item,
+.regular-costumers-icon-link:focus .regular-costumers-icon-item {
   fill: var(--accent-color);
 }
 .regular-costumers-icon-link:hover,
